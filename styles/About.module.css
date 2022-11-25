@@ -1,0 +1,142 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+    background-color: #E9F1F7;
+    color: #142831;
+    overflow-y: scroll;
+}
+
+.heading_container {
+    border-bottom: 3px solid #4EA699;
+}
+
+.content_wrapper {
+    margin: 7% 5% 4%;
+    padding: 4%;
+    border-radius: 12px;
+    box-shadow: #142831 0px 0px 15px -5px;
+}
+
+.content_wrapper > div {
+    display: flex;
+}
+
+.sidebar_container {
+    width: 35%;
+    background-color: #4EA699;
+    color: #E9F1F7;
+}
+
+.photo_container {
+    text-align: center;
+    background-color: #A8A9B4;
+}
+
+.photo_container > img {
+    margin: 30px 0;
+    border: 1px solid #142831;
+    border-radius: 10px;
+}
+
+.sidebar_container > div:not(.sidebar_container > div:nth-child(1)) {
+    margin: 40px 30px;
+}
+
+.info_contact > div > p {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.info_contact > div span {
+    display: inline-flex;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.sidebar_container ul {
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+
+.main_container {
+    flex: 1;
+}
+
+.content {
+    margin: 6% 10%;
+}
+
+.content h2 {
+    color: #4EA699;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.content h3 {
+    margin: .5% 0;
+}
+
+.content h4 {
+    margin: 2% 0 5%;
+}
+
+.content p, .content ul {
+    font-size: 0.9rem;
+}
+
+.description {
+    text-align: justify;
+}
+
+@supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
+	.description {
+		text-align: justify;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+	}
+
+    .content ul {
+        text-align: justify;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+    }
+}
+
+.content_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_heading span:first-child {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: #E9F1F7;
+    background: rgb(78,166,153);
+    background: linear-gradient(90deg, rgba(78,166,153,1) 1%, rgba(42,82,101,1) 100%);
+    text-align: center;
+    box-shadow: #999 5px 4px 8px;
+}
+
+.content_heading span:last-child {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.content_heading h4 {
+    margin: 0;
+}
+
+.experience_content *, .experience_content h4 {
+    margin: .5%;
+}
+
+.education_content *, .education_content h4 {
+    margin: .5% !important;
+}
+
+.experience_content h4, .education_content h4 {
+    color: #4EA699;
+}

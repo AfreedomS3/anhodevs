@@ -1,0 +1,32 @@
+.links {
+    padding: 16px 0;
+    font-size: 1.05rem;
+    color: #A8A9B4;
+}
+
+.links:hover a {
+    color: #FFF;
+    transition: all .2s ease-in-out 0s;
+}
+
+.links:hover ion-icon {
+    color: #2ADFC4;
+    transition: all .2s ease-in-out 0s;
+}
+
+.isActive a {
+    color: #FFF;
+}
+
+.isActive ion-icon {
+    color: #2ADFC4;
+}
+
+.links a {
+    display: inline-flex;
+}
+
+.links ion-icon {
+    margin-right: 10px;
+    font-size: 22px;
+}

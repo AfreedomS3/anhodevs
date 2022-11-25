@@ -1,0 +1,35 @@
+.load_skeleton {
+    width: 40%;
+    min-width: 200px;
+    margin: 5%;
+    border-radius: 12px;
+}
+
+.load_skeleton div {
+    border-radius: 12px;
+    margin: 2%;
+    background-color: #BBB;
+    box-shadow: #142831 0px 0px 10px -5px;
+}
+
+.load_skeleton > div:first-child {
+    height: 200px;
+    animation: loading 2s ease-in-out 0s infinite normal none;
+}
+
+.load_skeleton > div:nth-child(2) {
+    height: 40px;
+    animation: loading 2s ease-in-out 0s infinite normal none;
+}
+
+.load_skeleton > div:last-child {
+    height: 40px;
+    width: 50%;
+    animation: loading 2s ease-in-out 0s infinite normal none;
+}
+
+@keyframes loading {
+    20% {
+        background-color: #999;
+    }
+}

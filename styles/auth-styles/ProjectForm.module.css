@@ -1,0 +1,115 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 5% 5% 5%;
+}
+
+.container * {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.postResult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #4EA699;
+    color: #E9F1F7;
+    text-align: center;
+}
+
+.postError {
+    background-color: crimson;
+}
+
+.container label {
+    display: block;
+    margin: 5px 0;
+}
+
+.form_group_left {
+    float: left;
+    width: 50%;
+    padding-right: 10%;
+    border-right: 1px solid #142831;
+}
+
+.form_group_right {
+    float: right;
+    width: 40%;
+}
+
+.formSubmit::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container input:not(input[type="file"]) {
+    padding: 3px 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #142831;
+}
+
+.container select {
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 20px;
+    border: 1px solid #142831;
+}
+
+.container textarea {
+    resize: none;
+    padding: 6px 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #142831;
+}
+
+.formSubmit {
+    width: 100%;
+    text-align: center;
+}
+
+.container input[type="file"]::file-selector-button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4EA699;
+    color: #e9f1f7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container input[type="file"]::file-selector-button:hover {
+    background-color: #2ADFC4;
+    color: black;
+}
+
+.container input[type="file"]::file-selector-button:active {
+    transform: scale(0.9, 0.9);
+}
+
+.formSubmit button {
+    margin-top: 6%;
+    padding: 12px 5%;
+    border-radius: 20px;
+    border: none;
+    background-color: #142831;
+    color: #e9f1f7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formSubmit button:hover {
+    background-color: #2A5265;
+}
+
+.formSubmit button:active {
+    transform: scale(0.9, 0.9);
+}
