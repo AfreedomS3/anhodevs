@@ -1,6 +1,6 @@
 async function login(user) {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api-token-auth/', {
+      const res = await fetch(process.env.NEXT_PUBLIC_LOGIN_API, {
         method: 'POST',
         body: JSON.stringify({...user}),
         headers: {

@@ -1,6 +1,6 @@
 async function getTags() {
     try {
-        const res = await fetch('http://localhost:8000/tags/');
+        const res = await fetch(process.env.NEXT_PUBLIC_TAG_LIST_API);
         const data = await res.json();
 
         if (res.ok) {

@@ -1,6 +1,6 @@
 async function getProjects() {
     try {
-        const res = await fetch('http://localhost:8000/projects/');
+        const res = await fetch(process.env.NEXT_PUBLIC_PROJECT_LIST_API);
         const data = await res.json();
 
         if (res.ok) {

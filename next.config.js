@@ -10,6 +10,11 @@ const nextConfig = {
         port: '8000',
         pathname: '/media/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/dmvwptuuf/image/upload/v1/anhodevs_portfolio/media/**',
+      }
     ],
   },
 }

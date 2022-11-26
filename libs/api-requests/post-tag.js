@@ -1,7 +1,7 @@
 async function postTag(tag) {
     try {
         const token = sessionStorage.getItem('token') ? sessionStorage.getItem('token') : null;
-        const res = await fetch('http://localhost:8000/tags/', {
+        const res = await fetch(process.env.NEXT_PUBLIC_TAG_LIST_API, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

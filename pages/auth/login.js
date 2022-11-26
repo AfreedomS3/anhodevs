@@ -51,7 +51,7 @@ function Login({ isLoggedIn, updateSession }) {
                         <div>
                             <h1>Inicio de sesión</h1>
                             <hr />
-                            <form onSubmit={handleOnSubmit}>
+                            <form onSubmit={handleOnSubmit} autoComplete="off">
                                 <div className={styles.formField}>
                                     <label htmlFor="username">Usuario</label>
                                     <input 

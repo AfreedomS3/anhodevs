@@ -1,7 +1,7 @@
 async function postProject(postData) {
     try {
         const token = sessionStorage.getItem('token') ? sessionStorage.getItem('token') : null;
-        const res = await fetch('http://localhost:8000/projects/', {
+        const res = await fetch(process.env.NEXT_PUBLIC_PROJECT_LIST_API, {
             method: 'POST',
             headers: {
                 'Authorization': `Token ${token}`,
