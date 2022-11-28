@@ -10,7 +10,7 @@ function About() {
     <Layout>
       <div className={styles.container}>
         <div className={styles.heading_container}><h1>Acerca de mí</h1></div>
-        <div className={styles.content_wrapper}>
+        <div id="printable-content" className={styles.content_wrapper}>
           <div>
             <div className={styles.sidebar_container}>
               <div className={styles.photo_container}>
@@ -45,7 +45,7 @@ function About() {
                 <div>
                   <p>
                     <span><ion-icon name="globe-outline"></ion-icon></span> 
-                    <Link href="/" legacyBehavior><a> Portafolio Web</a></Link>
+                    <a href='https://anhodevs.doublehdevs.net' target='_blank' rel="noreferrer"> Portafolio Web</a>
                   </p>
                 </div>
                 <div><p><span><ion-icon name="location-outline"></ion-icon></span> Lorica - Córdoba (Colombia)</p></div>
@@ -58,6 +58,7 @@ function About() {
                   <li>Python</li>
                   <li>Django, Django REST Framework</li>
                   <li>Java</li>
+                  <li>PHP</li>
                   <li>MySQL, PostgreSQL</li>
                 </ul>
               </div>
@@ -81,13 +82,29 @@ function About() {
                     Front-end y Back-end, automatización web y documentación de procesos.
                     Tengo conocimientos en tecnologías HTML, CSS, JavaScript, React Js, Next Js,
                     Python, Django - Django REST Framework, MySQL, PostgreSQL.
-                    Conocimientos básicos en Java.
+                    Conocimientos básicos en Java y PHP.
                   </p>
                 </div>
               </section>
               <section className={styles.content_section}>
                 <div className={styles.content_heading}>
                   <span><h4>EXPERIENCIA</h4></span><span><WorkOutlineOutlinedIcon sx={{fontSize: '2rem'}} /></span>
+                </div>
+                <div className={`${styles.content} ${styles.experience_content}`}>
+                  <h4>DESARROLLO DE PROYECTOS WEB (3 Meses)</h4>
+{/*                   <p><strong>PROGRAMADOR PYTHON - UNIDAD DE ANÁLISIS INSTITUCIONAL</strong></p> */}
+                  <p><strong>Loríca - Córdoba (Colombia)</strong></p>
+                  <ul>
+                    <li>
+                      Desarrollo de un portafolio web utilizando React Js con Next Js en el front-end y Django REST
+                      Framework en el back-end para desarrollar una API que almacena la información del portafolio en una base de datos PostgreSQL. <br />
+                      El proyecto puede ser visitado en: <br /> <a style={{color: 'dodgerblue'}} href='https://anhodevs.doublehdevs.net' target='_blank' rel="noreferrer">anhodevs.doublehdevs.net</a>.
+                    </li>
+                    <li>
+                      Desarrollo de un sistema de inventario de equipos para el área de sistemas de la empresa Minerva Foods en Ciénaga de Oro - Córdoba. Desarrollado con HTML, CSS, JavaScript, Bootstrap, Jquery, PHP y MySQL.
+                    </li>
+                  </ul>
+                  <p>Septiembre 2022 - Noviembre 2022</p>
                 </div>
                 <div className={`${styles.content} ${styles.experience_content}`}>
                   <h4>INNTECCO - UNIVERSIDAD DEL SINÚ (3 Meses)</h4>

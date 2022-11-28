@@ -24,6 +24,7 @@
 
 .sidebar_container {
     width: 35%;
+    padding-bottom: 40px;
     background-color: #4EA699;
     color: #E9F1F7;
 }
@@ -34,6 +35,9 @@
 }
 
 .photo_container > img {
+    width: auto;
+    max-width: 133px;
+    height: auto;
     margin: 30px 0;
     border: 1px solid #142831;
     border-radius: 10px;
@@ -62,6 +66,10 @@
 
 .main_container {
     flex: 1;
+}
+
+.main_container > section:last-child {
+    margin-bottom: 6%;
 }
 
 .content {
@@ -139,4 +147,41 @@
 
 .experience_content h4, .education_content h4 {
     color: #4EA699;
+}
+
+@media screen and (max-width: 839px) {
+    .content_wrapper > div {
+        display: block;
+    }
+
+    .sidebar_container {
+        width: 100%;
+    }
+
+    .photo_container > img {
+        width: auto;
+        max-width: 133px;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .main_container h2 {
+        font-size: 1.5rem;
+    }
+
+    .main_container h3 {
+        font-size: 1rem;
+    }
+
+    .main_container h4 {
+        font-size: 0.9rem;
+    }
+
+    .main_container p {
+        font-size: 0.75rem;
+    }
+
+    .main_container ul {
+        font-size: 0.75rem;
+    }
 }

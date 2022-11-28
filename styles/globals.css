@@ -66,3 +66,33 @@ main {
     display: inline-flex;
   }
 }
+
+/* Media Query for printer */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-content, #printable-content * {
+    visibility: visible;
+    /* break-inside: avoid; */
+  }
+
+  #printable-content {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+    overflow: visible;
+  }
+
+  #printable-content a {
+    text-decoration: underline;
+  } 
+
+  #nav-menu {
+    display: none;
+  }
+}
