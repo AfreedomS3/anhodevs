@@ -91,8 +91,8 @@ function About() {
                   <span><h4>EXPERIENCIA</h4></span><span><WorkOutlineOutlinedIcon sx={{fontSize: '2rem'}} /></span>
                 </div>
                 <div className={`${styles.content} ${styles.experience_content}`}>
-                  <h4>DESARROLLO DE PROYECTOS WEB (3 Meses)</h4>
-{/*                   <p><strong>PROGRAMADOR PYTHON - UNIDAD DE ANÁLISIS INSTITUCIONAL</strong></p> */}
+                  <h4>DESARROLLADOR WEB (3 Meses)</h4>
+                  <p><strong>INDEPENDIENTE</strong></p>
                   <p><strong>Loríca - Córdoba (Colombia)</strong></p>
                   <ul>
                     <li>
@@ -107,8 +107,8 @@ function About() {
                   <p>Septiembre 2022 - Noviembre 2022</p>
                 </div>
                 <div className={`${styles.content} ${styles.experience_content}`}>
-                  <h4>INNTECCO - UNIVERSIDAD DEL SINÚ (3 Meses)</h4>
-                  <p><strong>PROGRAMADOR PYTHON - UNIDAD DE ANÁLISIS INSTITUCIONAL</strong></p>
+                  <h4>PROGRAMADOR PYTHON (3 Meses)</h4>
+                  <p><strong>INNTECCO - UNIVERSIDAD DEL SINÚ</strong></p>
                   <p><strong>Montería - Córdoba (Colombia)</strong></p>
                   <ul>
                     <li>
