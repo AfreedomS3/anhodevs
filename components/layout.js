@@ -8,7 +8,7 @@ function Layout({ children }) {
     }
 
     return (
-        <div style={{width: '100%', height: '100%'}}
+        <motion.div
             initial="hidden"
             animate="enter"
             exit="exit"
@@ -16,7 +16,7 @@ function Layout({ children }) {
             transition={{ type: 'linear', duration: 0.2 }}
         >
             {children}
-        </div> 
+        </motion.div> 
     );
 }
 
