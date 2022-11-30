@@ -1,7 +1,7 @@
 .project_card {
     width: 40%;
     min-width: 200px;
-    height: 400px;
+    height: 500px;
     margin: 5%;
     padding: 2%;
     border-radius: 12px;
@@ -23,17 +23,16 @@
 .card_container img {
     width: 100%;
     height: 100%;
+    
 }
 
 .card_container > a {
     display: block;
-    width: 100%;
-    height: 40%;
 }
 
 .contenedor_img {
     position: relative;
-    height: 100%;
+    height: 150px;
     background-color: #999;
 }
 
@@ -42,16 +41,26 @@
     padding-top: 2%;
 }
 
+.contenedor_description > h4 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contenedor_description p {
+    font-size: 0.9rem;
+}
+
+.urls {
+    font-size: 0.9rem;
+    margin-bottom: 2%;
+}
+
 .link_git {
     color: dodgerblue;
 }
 
 .link_git:hover {
     text-decoration: underline;
-}
-
-.contenedor_description p {
-    font-size: 0.9rem;
 }
 
 .contenedor_date {
@@ -75,7 +84,7 @@
 }
 
 @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-	.contenedor_description {
+	.contenedor_description > p {
 		text-align: justify;
 		-webkit-hyphens: auto;
 		hyphens: auto;
@@ -86,5 +95,22 @@
     .project_card {
         width: 80%;
         margin: 5% auto;
+    }
+
+    .contenedor_img {
+        height: 200px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor_description p {
+        font-size: 0.75rem;
+    }
+
+    .project_card {
+        width: 90%;
+        margin: 4% auto 8%;
     }
 }

@@ -23,6 +23,8 @@ function ProjectCard({ title, description, thumbnail, url, url_git, tags_list, c
                 <div className={styles.contenedor_description}>
                     <h4>{title}</h4>
                     <p>{description}</p>
+                </div>
+                <div className={styles.urls}>
                     <p>
                         <a href={url_git} target="_blank" rel="noreferrer" 
                         className={styles.link_git}
