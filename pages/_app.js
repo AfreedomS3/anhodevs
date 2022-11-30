@@ -49,10 +49,11 @@ function MyApp({ Component, pageProps }) {
         <div id='menu-button' className='menu-button' onClick={handleOnClick}>
           <span><MenuOutlinedIcon sx={{fontSize: '1.5rem'}} /></span>
         </div> 
-        <AnimatePresence
+        {/* <AnimatePresence
           mode="wait"
           onExitComplete={() => window.scrollTo(0, 0)}
         >
+          </AnimatePresence>   */}    
           <Component {...pageProps} 
             initialState={initial} 
             setInitial={setInitial} 
@@ -60,7 +61,6 @@ function MyApp({ Component, pageProps }) {
             updateSession={setIsLoggedIn}
             key={url}
           />  
-        </AnimatePresence>      
       </main>
     </>
   );

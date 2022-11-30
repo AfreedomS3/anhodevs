@@ -45,7 +45,7 @@ function About() {
                 <div>
                   <p>
                     <span><ion-icon name="globe-outline"></ion-icon></span> 
-                    <a href='https://anhodevs.doublehdevs.net' target='_blank' rel="noreferrer"> Portafolio Web</a>
+                    <a href='https://anhodevs.vercel.app' target='_blank' rel="noreferrer"> Portafolio Web</a>
                   </p>
                 </div>
                 <div><p><span><ion-icon name="location-outline"></ion-icon></span> Lorica - Córdoba (Colombia)</p></div>
@@ -98,7 +98,7 @@ function About() {
                     <li>
                       Desarrollo de un portafolio web utilizando React Js con Next Js en el front-end y Django REST
                       Framework en el back-end para desarrollar una API que almacena la información del portafolio en una base de datos PostgreSQL. <br />
-                      El proyecto puede ser visitado en: <br /> <a style={{color: 'dodgerblue'}} href='https://anhodevs.doublehdevs.net' target='_blank' rel="noreferrer">anhodevs.doublehdevs.net</a>.
+                      El proyecto puede ser visitado en: <br /> <a style={{color: 'dodgerblue'}} href='https://anhodevs.vercel.app' target='_blank' rel="noreferrer">anhodevs.vercel.app</a>.
                     </li>
                     <li>
                       Desarrollo de un sistema de inventario de equipos para el área de sistemas de la empresa Minerva Foods en Ciénaga de Oro - Córdoba. Desarrollado con HTML, CSS, JavaScript, Bootstrap, Jquery, PHP y MySQL.
