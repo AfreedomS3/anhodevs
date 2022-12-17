@@ -67,11 +67,29 @@
     font-size: 0.9rem;
 }
 
-.tags_container {
-    margin-top: 2%;
-    padding-top: 4%;
+.wrapper {
+    position: relative;
     border-top: 5px solid #4EA699;
+    margin-top: 2%;
+}
+
+.tags_container {
+    margin: 0 auto;
+    padding-top: 4%;
     font-size: 0.8rem;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+/* hide scrollbar but allow scrolling */
+.tags_container {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+  
+.tags_container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 .tags_container > div {
@@ -81,6 +99,36 @@
     border: 1px solid #A8A9B4;
     border-radius: 12px;
     background-color: #ccc;
+}
+
+.btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    padding: 0 5px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: rgb(221, 225, 230);
+}
+
+.btn_l {
+    visibility: hidden;
+    left: 0;
+    box-shadow: aliceblue 12px 0px 11px 11px;
+}
+
+.btn_r {
+    right: 0;
+    box-shadow: aliceblue -12px 0px 11px 11px;
 }
 
 @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
@@ -101,6 +149,15 @@
         height: 200px;
         border-radius: 12px;
         overflow: hidden;
+    }
+
+    .tags_container {
+        margin: 0 0;
+        width: 100% !important;
+    }
+
+    .btn {
+        visibility: hidden !important;
     }
 }
 
